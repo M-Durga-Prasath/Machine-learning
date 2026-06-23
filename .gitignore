@@ -1,0 +1,25 @@
+*cifardata/
+*.tar.gz# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+
+# Datasets
+cifardata/
+data/
+
+# Large archives
+*.tar.gz
+*.zip
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+
+# Jupyter
+.ipynb_checkpoints/
+
