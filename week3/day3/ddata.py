@@ -1,0 +1,2 @@
+# Larnt how datat is labelled was told to create a custom data set but it was paid or something so using public dataset
+# dataset link - https://www.kaggle.com/datasets/nadinpethiyagoda/vehicle-dataset-for-yolo
