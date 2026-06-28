@@ -10,6 +10,7 @@ venv/
 # Datasets
 cifardata/
 data/
+dataset/
 
 # Large archives
 *.tar.gz
