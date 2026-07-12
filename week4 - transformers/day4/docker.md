@@ -1,0 +1,1 @@
+for more details see the ci/cd git hub repo in my profile
