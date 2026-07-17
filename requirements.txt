@@ -15,3 +15,4 @@ ultralytics==8.4.78
 fastapi==0.116.1
 uvicorn==0.35.0
 pydantic==2.11.7
+sentence-transformers
