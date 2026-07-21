@@ -13,6 +13,8 @@ data/
 dataset/
 results/
 
+testing/
+
 # Large archives
 *.tar.gz
 *.zip
