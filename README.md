@@ -1,0 +1,180 @@
+# 🧠 Machine Learning – Personal Learning Journey
+
+This repository documents my personal, week-by-week journey of learning Machine Learning, Deep Learning, Computer Vision, NLP, and Production ML from the ground up. Every notebook, script, and note here is a record of what I studied, built, and experimented with.
+
+> **This is a personal learning project.** The code and notes reflect my progress as I learn — they are not meant to be a polished library or production system.
+
+---
+
+## 📅 Curriculum Overview
+
+| Week | Focus Area | Status |
+|------|-----------|--------|
+| [Week 1](#week-1--ml-foundations--pytorch) | ML Foundations & PyTorch | ✅ Complete |
+| [Week 2](#week-2--deep-learning--cnns) | Deep Learning & CNNs | ✅ Complete |
+| [Week 3](#week-3--computer-vision-with-yolo) | Computer Vision with YOLO | ✅ Complete |
+| [Week 4](#week-4--transformers--production-ml) | Transformers & Production ML | ✅ Complete |
+| [Week 5](#week-5--rag-foundations) | RAG Foundations | 🔄 In Progress |
+
+---
+
+## Week 1 — ML Foundations & PyTorch
+
+> 📂 Refer to [`week1/`](week1/) for all notebooks and notes.
+
+Covered the fundamentals of machine learning and got hands-on with PyTorch (GPU-accelerated with CUDA).
+
+| Day | Topic | File |
+|-----|-------|------|
+| Day 1 | Environment setup, PyTorch + CUDA installation | `setup-env.ipynb` |
+| Day 2 | Linear Regression in PyTorch, PyTorch basics | `linear-reg.ipynb`, `pytorch.md` |
+| Day 3 | Logistic Regression | `logistic-reg.ipynb` |
+| Day 4 | Matrix operations & linear algebra | `matrix.ipynb` |
+| Day 5 | End-to-end model building pipeline | `modelbuilding.ipynb` |
+| Day 6 | Probability & simulation (coin flip experiments) | `coinflip.ipynb` |
+| Day 7 | Car price prediction model, relationship testing | `carmodel.ipynb`, `relationtest.ipynb` |
+
+---
+
+## Week 2 — Deep Learning & CNNs
+
+> 📂 Refer to [`week2/`](week2/) for all notebooks and notes.
+
+Went deeper into neural networks, CNNs, transfer learning, and built a full image classifier.
+
+| Day | Topic | File |
+|-----|-------|------|
+| Day 1 | PyTorch tensor basics & operations | `pytorchbasics.ipynb` |
+| Day 2 | Building a neural network from scratch | `neuralnetwork.ipynb` |
+| Day 3 | MNIST digit classification | `mnsit.ipynb` |
+| Day 4 | Convolutional Neural Networks (CNNs) | `cnnmodel.ipynb` |
+| Day 5 | Pretrained models & transfer learning (CIFAR) | `pretrained-model.ipynb` |
+| Day 6 | Regularization techniques (dropout, weight decay) | `reqularization.ipynb` |
+| Day 7 | **Capstone:** Vehicle classifier (trained & saved model) | `vehicleclassifier.ipynb` |
+
+---
+
+## Week 3 — Computer Vision with YOLO
+
+> 📂 Refer to [`week3/`](week3/) for all notebooks and notes.
+
+Explored real-time object detection, tracking, and built an autonomous driving perception mini-system.
+
+| Day | Topic | File |
+|-----|-------|------|
+| Day 1 | YOLOv8 basics — first detection on images | `yolo.ipynb` |
+| Day 2 | YOLOv8 on video — real-time detection | `yolov8prac.ipynb` |
+| Day 3 | Data labelling & custom dataset preparation | `ddata.py` |
+| Day 4 | Fine-tuning YOLOv8 on a custom vehicle dataset | `finetuning.ipynb` |
+| Day 5 | Model evaluation metrics (mAP, precision, recall) | `modeleval.ipynb` |
+| Day 6 | Multi-object tracking with ByteTrack | `tracking.ipynb` |
+| Day 7 | **Capstone:** Autonomous driving perception pipeline | `capstoneproj.ipynb` |
+
+**Week 3 Capstone highlights:**
+- YOLOv8 object detection + ByteTrack tracking
+- Persistent track IDs, motion trails, FPS overlay
+- Vehicle counting & pedestrian danger-zone alerts
+- Full annotated output video saved to `output/`
+
+---
+
+## Week 4 — Transformers & Production ML
+
+Dove into the Transformer architecture, NLP model families, and production deployment patterns.
+
+| Day | Topic | File |
+|-----|-------|------|
+| Day 1 | Transformer architecture — self-attention, Q/K/V | `transformers.ipynb` |
+| Day 2 | Multi-head attention, positional encoding, tokenization | `transformers.ipynb` |
+| Day 3 | Fine-tuning Transformers with Hugging Face Trainer API | `3ftransformers.ipynb` |
+| Day 4 | Python production habits — decorators, logging, Docker intro | `decorator.py`, `docker.md` |
+| Day 5 | Serving ML models with FastAPI + simple web UI | `app.py`, `index..html`, `model.ipynb` |
+| Day 6 | Dockerizing the ML API — Dockerfile, compose, deployment | `Dockerfile`, `compose.yaml`, `app.py` |
+
+**Key topics covered:**
+- Why Transformers replaced RNNs
+- Scaled dot-product attention & multi-head attention
+- BERT vs GPT vs T5 — when to use which
+- Hugging Face ecosystem (models, tokenizers, datasets, Trainer)
+- FastAPI + Pydantic for ML serving
+- Docker containerization for reproducible ML deployments
+
+---
+
+## Week 5 — RAG Foundations
+
+Building the foundation for Retrieval-Augmented Generation (RAG) systems.
+
+| Day | Topic | File |
+|-----|-------|------|
+| Day 1 | Text embeddings — sentence transformers, CLS vs mean pooling | `embeddings.ipynb` |
+| Day 2 | Vector search theory — cosine similarity, HNSW, pgvector | `closeness.md` |
+| Day 3 | Text chunking strategies for RAG | `chunking.ipynb` |
+
+**Key topics covered:**
+- Why mean pooling > CLS pooling for semantic search
+- Cosine similarity vs Euclidean distance
+- HNSW (Hierarchical Navigable Small World) graphs
+- pgvector — vector search inside PostgreSQL
+- SQL window functions for RAG result ranking
+- Chunking strategies for document processing
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Python
+- **ML/DL:** PyTorch (CUDA), scikit-learn
+- **Computer Vision:** Ultralytics YOLOv8, OpenCV
+- **NLP:** Hugging Face Transformers, Sentence Transformers
+- **Serving:** FastAPI, Pydantic
+- **Deployment:** Docker, Docker Compose
+- **Database:** PostgreSQL + pgvector
+- **Data:** Pandas, NumPy, Matplotlib
+
+---
+
+## 📁 Project Structure
+
+```
+Machine-learning/
+├── week1/                    # ML Foundations & PyTorch
+│   ├── day1/ ... day7/
+├── week2/                    # Deep Learning & CNNs
+│   ├── day1/ ... day7/
+├── week3/                    # Computer Vision (YOLO)
+│   ├── day1/ ... day7/
+├── week4_transformers/       # Transformers & Production ML
+│   ├── day1/ ... day6/
+│   └── revision.md
+├── week5_ragfoundations/     # RAG Foundations
+│   ├── day1/ ... day3/
+│   └── revision.md
+├── data/                     # Datasets (CSV, Parquet, etc.)
+├── testing/                  # Misc experiments & scripts
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/M-Durga-Prasath/Machine-learning.git
+cd Machine-learning
+
+# Create a virtual environment
+python -m venv .venv
+.venv\Scripts\activate        # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# For PyTorch with CUDA (see week1/day2/pytorch.md for full guide)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+```
+
+---
+
