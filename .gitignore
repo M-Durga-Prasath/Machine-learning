@@ -27,3 +27,6 @@ testing/
 # Jupyter
 .ipynb_checkpoints/
 
+
+#virtual-environment
+.env
