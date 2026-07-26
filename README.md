@@ -14,7 +14,7 @@ This repository documents my personal, week-by-week journey of learning Machine 
 | [Week 2](#week-2--deep-learning--cnns) | Deep Learning & CNNs | ✅ Complete |
 | [Week 3](#week-3--computer-vision-with-yolo) | Computer Vision with YOLO | ✅ Complete |
 | [Week 4](#week-4--transformers--production-ml) | Transformers & Production ML | ✅ Complete |
-| [Week 5](#week-5--rag-foundations) | RAG Foundations | 🔄 In Progress |
+| [Week 5](#week-5--rag-foundations) | RAG Foundations | ✅ Complete |
 
 ---
 
