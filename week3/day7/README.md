@@ -1,81 +1,98 @@
-# Week 3 Day 7 - Autonomous Driving Perception Mini-System
+# 🚗 Week 3 Capstone — Autonomous Driving Perception Pipeline
 
-This folder contains the Day 7 capstone project for the Week 3 perception module.
+> **Location:** `week3/day7/`
+> **Main notebook:** [`capstoneproj.ipynb`](capstoneproj.ipynb)
 
-## Project Overview
+---
 
-The goal of this mini-system is to build a simple autonomous-driving style perception pipeline using:
+## What This Project Does
 
-- YOLOv8 object detection
-- ByteTrack multi-object tracking
-- Persistent object IDs
-- Motion trails
-- Live scene analytics
-- A basic pedestrian danger-zone alert
+This project builds a **mini autonomous-driving perception system** that processes a dashcam-style video and produces a fully annotated output with real-time analytics. It combines object detection with multi-object tracking to simulate the perception layer of a self-driving car.
 
-The main implementation is in:
+### Pipeline at a Glance
 
-- `capstoneproj.ipynb`
+```
+Input Video → YOLOv8 Detection → ByteTrack Tracking → Annotated Output Video
+```
 
-## What Was Done
+Specifically, the system:
 
-The notebook processes a video feed and:
+1. **Detects objects** in every frame using a YOLOv8 model (`yolov8n.pt`)
+2. **Tracks objects** across frames using the ByteTrack algorithm, assigning persistent IDs
+3. **Draws motion trails** showing each tracked object's path over time
+4. **Counts unique vehicles** and pedestrians on screen
+5. **Monitors a danger zone** at the bottom of the frame — triggers a pedestrian alert when a person enters it
+6. **Overlays live FPS** to measure inference speed
+7. **Saves the annotated result** as a video to `output/track1.mp4`
 
-1. Detects objects with YOLOv8
-2. Tracks objects across frames with ByteTrack
-3. Draws persistent track IDs on detections
-4. Shows motion trails for tracked objects
-5. Counts vehicles and people on screen
-6. Measures FPS during inference
-7. Highlights a bottom danger zone
-8. Triggers a pedestrian alert when a person enters that zone
-9. Saves the annotated result video to `output/track1.mp4`
+---
 
-## Files in This Folder
-
-- `capstoneproj.ipynb` - notebook for the complete perception pipeline
-- `video.mp4` - input video used for the demo
-- `yolov8n.pt` - YOLOv8 pretrained model used for detection
-- `output/track1.mp4` - saved tracked demo video
-
-## Tech Stack
-
-- Python
-- Ultralytics YOLOv8
-- OpenCV
-- PyTorch
-
-## How to Run
-
-1. Open `capstoneproj.ipynb`
-2. Run the model and video setup cells
-3. Run the tracking cell
-4. Save the output video
-5. Display `output/track1.mp4` inside the notebook
-
-## Sample Output
+## Sample Output Features
 
 The generated output video includes:
 
-- Bounding boxes
-- Class labels
-- Confidence scores
-- Tracking IDs
-- Motion trails
-- FPS overlay
-- Unique vehicle count
-- Pedestrian alert zone
+| Feature | Description |
+|---------|-------------|
+| Bounding boxes | Drawn around every detected object |
+| Class labels | Car, person, truck, etc. |
+| Confidence scores | Model confidence for each detection |
+| Tracking IDs | Persistent IDs that follow objects across frames |
+| Motion trails | Visual path history for each tracked object |
+| FPS overlay | Real-time frames-per-second counter |
+| Vehicle count | Unique vehicle count displayed on screen |
+| Pedestrian alert | Warning triggered when a person enters the danger zone |
+
+---
+
+## Files
+
+| File | Description |
+|------|-------------|
+| `capstoneproj.ipynb` | Complete perception pipeline notebook |
+| `video.mp4` | Input dashcam video used for the demo |
+| `yolov8n.pt` | YOLOv8-nano pretrained model weights |
+| `output/track1.mp4` | Saved annotated output video |
+
+---
+
+## Tech Stack
+
+- **Detection:** Ultralytics YOLOv8
+- **Tracking:** ByteTrack (via Ultralytics)
+- **Video Processing:** OpenCV
+- **Framework:** PyTorch
+
+---
+
+## How to Run
+
+```bash
+# Make sure you have the dependencies installed
+pip install ultralytics opencv-python torch
+
+# Open the notebook
+jupyter notebook capstoneproj.ipynb
+```
+
+1. Run the model and video setup cells
+2. Run the tracking/inference cell
+3. The annotated video is saved to `output/track1.mp4`
+
+---
+
+## What I Learned
+
+- How to chain detection → tracking into a real-time perception pipeline
+- ByteTrack's approach to multi-object tracking using Kalman filters and IoU matching
+- Drawing persistent annotations (trails, IDs, zone alerts) on video frames with OpenCV
+- Measuring and displaying real-time FPS during inference
+
+---
 
 ## Future Improvements
 
-Possible next steps for the project:
-
-- Lane detection
-- Traffic sign detection
-- Depth estimation
-- Sensor fusion
-- Path planning
-
-## Notes
-
-This version uses `yolov8n.pt` as the detector. If a custom-trained `best.pt` model performs better, it can be swapped into the notebook later.
+- Lane detection overlay
+- Traffic sign recognition
+- Depth estimation from monocular video
+- Sensor fusion (camera + LiDAR simulation)
+- Path planning integration

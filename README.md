@@ -18,6 +18,18 @@ This repository documents my personal, week-by-week journey of learning Machine 
 
 ---
 
+## 🏆 Capstone Projects
+
+Each week culminates in a hands-on capstone project. Click through for detailed write-ups:
+
+| Week | Project | Description |
+|------|---------|-------------|
+| Week 3 | [🚗 Autonomous Driving Perception Pipeline](week3/day7/) | YOLOv8 + ByteTrack multi-object tracking with danger-zone alerts, motion trails, and live analytics on dashcam video |
+| Week 4 | [🐳 Dockerized Sentiment Analysis API](week4_transformers/day6/) | DistilBERT sentiment classifier served via FastAPI with a web UI, fully containerized with Docker Compose |
+| Week 5 | [🔍 RAG Document Retrieval Pipeline](week5_ragfoundations/day4/) | PDF ingestion → chunking → sentence-transformer embeddings → FAISS vector search for semantic document retrieval |
+
+---
+
 ## Week 1 — ML Foundations & PyTorch
 
 > 📂 Refer to [`week1/`](week1/) for all notebooks and notes.
@@ -68,7 +80,7 @@ Explored real-time object detection, tracking, and built an autonomous driving p
 | Day 4 | Fine-tuning YOLOv8 on a custom vehicle dataset | `finetuning.ipynb` |
 | Day 5 | Model evaluation metrics (mAP, precision, recall) | `modeleval.ipynb` |
 | Day 6 | Multi-object tracking with ByteTrack | `tracking.ipynb` |
-| Day 7 | **Capstone:** Autonomous driving perception pipeline | `capstoneproj.ipynb` |
+| Day 7 | **Capstone:** [Autonomous driving perception pipeline](week3/day7/) | `capstoneproj.ipynb` |
 
 **Week 3 Capstone highlights:**
 - YOLOv8 object detection + ByteTrack tracking
@@ -80,6 +92,8 @@ Explored real-time object detection, tracking, and built an autonomous driving p
 
 ## Week 4 — Transformers & Production ML
 
+> 📂 Refer to [`week4_transformers/`](week4_transformers/) for all notebooks and notes.
+
 Dove into the Transformer architecture, NLP model families, and production deployment patterns.
 
 | Day | Topic | File |
@@ -89,7 +103,7 @@ Dove into the Transformer architecture, NLP model families, and production deplo
 | Day 3 | Fine-tuning Transformers with Hugging Face Trainer API | `3ftransformers.ipynb` |
 | Day 4 | Python production habits — decorators, logging, Docker intro | `decorator.py`, `docker.md` |
 | Day 5 | Serving ML models with FastAPI + simple web UI | `app.py`, `index..html`, `model.ipynb` |
-| Day 6 | Dockerizing the ML API — Dockerfile, compose, deployment | `Dockerfile`, `compose.yaml`, `app.py` |
+| Day 6 | **Capstone:** [Dockerized sentiment analysis API](week4_transformers/day6/) | `Dockerfile`, `compose.yaml`, `app.py` |
 
 **Key topics covered:**
 - Why Transformers replaced RNNs
@@ -103,6 +117,8 @@ Dove into the Transformer architecture, NLP model families, and production deplo
 
 ## Week 5 — RAG Foundations
 
+> 📂 Refer to [`week5_ragfoundations/`](week5_ragfoundations/) for all notebooks and notes.
+
 Building the foundation for Retrieval-Augmented Generation (RAG) systems.
 
 | Day | Topic | File |
@@ -110,6 +126,9 @@ Building the foundation for Retrieval-Augmented Generation (RAG) systems.
 | Day 1 | Text embeddings — sentence transformers, CLS vs mean pooling | `embeddings.ipynb` |
 | Day 2 | Vector search theory — cosine similarity, HNSW, pgvector | `closeness.md` |
 | Day 3 | Text chunking strategies for RAG | `chunking.ipynb` |
+| Day 4 | **Capstone:** [RAG document retrieval pipeline](week5_ragfoundations/day4/) | `embed.py`, `retrival.py`, `simplerRAG.ipynb` |
+| Day 5 | ML evaluation metrics — confusion matrix, precision, recall, F1, ROC-AUC | `notes.md` |
+| Day 6 | Full RAG pipeline revision — tokenization, embeddings, retrieval deep-dive | `revise.md` |
 
 **Key topics covered:**
 - Why mean pooling > CLS pooling for semantic search
@@ -118,6 +137,9 @@ Building the foundation for Retrieval-Augmented Generation (RAG) systems.
 - pgvector — vector search inside PostgreSQL
 - SQL window functions for RAG result ranking
 - Chunking strategies for document processing
+- FAISS for fast vector similarity search
+- End-to-end RAG retrieval: PDF → chunk → embed → index → query
+- ML evaluation: confusion matrix, precision, recall, F1, ROC-AUC
 
 ---
 
@@ -127,6 +149,7 @@ Building the foundation for Retrieval-Augmented Generation (RAG) systems.
 - **ML/DL:** PyTorch (CUDA), scikit-learn
 - **Computer Vision:** Ultralytics YOLOv8, OpenCV
 - **NLP:** Hugging Face Transformers, Sentence Transformers
+- **RAG:** FAISS, LangChain, pypdf
 - **Serving:** FastAPI, Pydantic
 - **Deployment:** Docker, Docker Compose
 - **Database:** PostgreSQL + pgvector
@@ -143,12 +166,16 @@ Machine-learning/
 ├── week2/                    # Deep Learning & CNNs
 │   ├── day1/ ... day7/
 ├── week3/                    # Computer Vision (YOLO)
-│   ├── day1/ ... day7/
-├── week4_transformers/       # Transformers & Production ML
 │   ├── day1/ ... day6/
+│   └── day7/                 # 🏆 Capstone: Perception Pipeline
+├── week4_transformers/       # Transformers & Production ML
+│   ├── day1/ ... day5/
+│   ├── day6/                 # 🏆 Capstone: Dockerized ML API
 │   └── revision.md
 ├── week5_ragfoundations/     # RAG Foundations
 │   ├── day1/ ... day3/
+│   ├── day4/                 # 🏆 Capstone: RAG Retrieval Pipeline
+│   ├── day5/ ... day6/
 │   └── revision.md
 ├── data/                     # Datasets (CSV, Parquet, etc.)
 ├── testing/                  # Misc experiments & scripts
@@ -177,4 +204,3 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ```
 
 ---
-
