@@ -1,6 +1,9 @@
 from pathlib import Path
 import pickle
 from rank_bm25 import BM25Okapi
+from collections import defaultdict
+
+
 BASE_DIR = Path(__file__).resolve().parent
 
 METADATA_PATH = (
@@ -44,3 +47,17 @@ results = bm25.get_top_n(
 for i, result in enumerate(results, 1):
     print(f"\nResult {i}")
     print(result)
+    
+
+sorted_res = defaultdict(float)
+
+for rank,doc in enumerate(results):
+    sorted_res[doc] +=1/(60+rank+1)
+
+final_results = sorted(
+    sorted_res.items(),
+    key=lambda x: x[1],
+    reverse=True
+)
+
+print(final_results)

@@ -22,3 +22,4 @@ groq
 faiss-cpu
 langchain-text-splitters     
 psycopg2-binary   
+pytest
