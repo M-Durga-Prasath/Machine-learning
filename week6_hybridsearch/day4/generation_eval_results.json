@@ -1,0 +1,88 @@
+[
+  {
+    "question": "What does VITON stand for?",
+    "gold_answer": "Virtual Try-On.",
+    "generated_answer": "Virtual try-on",
+    "label": "Correct",
+    "explanation": "The generated answer matches the gold answer, differing only in case.",
+    "sources": [
+      "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+      "rbireport.pdf"
+    ],
+    "metadata": [
+      16,
+      17,
+      3,
+      4
+    ]
+  },
+  {
+    "question": "Which deep learning architecture is mentioned for image generation in the try-on module?",
+    "gold_answer": "U-Net.",
+    "generated_answer": "U-net",
+    "label": "Correct",
+    "explanation": "The generated answer 'U-net' matches the gold answer 'U-Net' with minor case difference.",
+    "sources": [
+      "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf"
+    ],
+    "metadata": [
+      2,
+      4,
+      8,
+      49,
+      27
+    ]
+  },
+  {
+    "question": "What are the two main modules of the proposed virtual try-on system?",
+    "gold_answer": "The Geometric Matching Module (GMM) and the Try-On Module (TOM).",
+    "generated_answer": "The two main modules of the proposed virtual try-on system are the Try-On Module (TOM) and the Geometric Matching Module (GMM).",
+    "label": "Correct",
+    "explanation": "The generated answer correctly identifies the two main modules of the proposed virtual try-on system, albeit in a different order.",
+    "sources": [
+      "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf"
+    ],
+    "metadata": [
+      33,
+      2,
+      7,
+      49,
+      27
+    ]
+  },
+  {
+    "question": "What dataset is used for training and evaluation?",
+    "gold_answer": "The VTON dataset.",
+    "generated_answer": "The VTON dataset is used, which has about 19,000 image pairs, divided into training and testing sets with 14,221 image pairs in the training set and 2,032 image pairs in the testing set.",
+    "label": "Correct",
+    "explanation": "The generated answer includes the gold answer and provides additional relevant information.",
+    "sources": [
+      "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+      "rbireport.pdf"
+    ],
+    "metadata": [
+      33,
+      1109,
+      31,
+      30,
+      63
+    ]
+  },
+  {
+    "question": "Approximately how many image pairs are included in the VTON dataset?",
+    "gold_answer": "About 19,000 image pairs.",
+    "generated_answer": "19,000",
+    "label": "Correct",
+    "explanation": "The generated answer matches the gold answer.",
+    "sources": [
+      "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf"
+    ],
+    "metadata": [
+      32,
+      44,
+      17,
+      30,
+      31
+    ]
+  }
+]

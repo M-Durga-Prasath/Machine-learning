@@ -1,0 +1,322 @@
+[
+  {
+    "question": "What does VITON stand for?",
+    "gold_answer": "Virtual Try-On.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 4
+      }
+    ]
+  },
+  {
+    "question": "Which deep learning architecture is mentioned for image generation in the try-on module?",
+    "gold_answer": "U-Net.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 27
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 30
+      }
+    ]
+  },
+  {
+    "question": "What are the two main modules of the proposed virtual try-on system?",
+    "gold_answer": "The Geometric Matching Module (GMM) and the Try-On Module (TOM).",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 2
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 21
+      }
+    ]
+  },
+  {
+    "question": "What dataset is used for training and evaluation?",
+    "gold_answer": "The VTON dataset.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 30
+      }
+    ]
+  },
+  {
+    "question": "Approximately how many image pairs are included in the VTON dataset?",
+    "gold_answer": "About 19,000 image pairs.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 30
+      }
+    ]
+  },
+  {
+    "question": "What evaluation metric is used to assess image quality?",
+    "gold_answer": "Frechet Inception Distance (FID).",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 35
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 36
+      }
+    ]
+  },
+  {
+    "question": "What FID score does the proposed system achieve?",
+    "gold_answer": "10.09.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 36
+      }
+    ]
+  },
+  {
+    "question": "Who is the Governor of the Reserve Bank of India according to the report?",
+    "gold_answer": "Sanjay Malhotra.",
+    "gold_chunks": [
+      {
+        "source": "rbireport.pdf",
+        "chunk_id": 0
+      },
+      {
+        "source": "rbireport.pdf",
+        "chunk_id": 1252
+      }
+    ]
+  },
+  {
+    "question": "Which annual report is included in the corpus?",
+    "gold_answer": "Reserve Bank of India Annual Report 2025–26.",
+    "gold_chunks": [
+      {
+        "source": "rbireport.pdf",
+        "chunk_id": 0
+      }
+    ]
+  },
+  {
+    "question": "What is the purpose of virtual try-on technology?",
+    "gold_answer": "To let users visualize how clothing looks on them before purchase.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 1
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 5
+      }
+    ]
+  },
+  {
+    "question": "Which module aligns the garment with the person's body?",
+    "gold_answer": "The Geometric Matching Module (GMM).",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 21
+      }
+    ]
+  },
+  {
+    "question": "What problem does grid interval consistency loss address?",
+    "gold_answer": "It prevents distortion of clothing patterns during warping.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 3
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 18
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 19
+      }
+    ]
+  },
+  {
+    "question": "How does the proposed virtual try-on system preserve a person's identity?",
+    "gold_answer": "It preserves the face, hair, lower garments, and legs while warping only the target clothing region.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 2
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 3
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 19
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 39
+      }
+    ]
+  },
+  {
+    "question": "Why does hybrid processing with GMM and TOM improve results?",
+    "gold_answer": "GMM accurately warps the clothing to the body while TOM synthesizes the final realistic try-on image.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 21
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 22
+      }
+    ]
+  },
+  {
+    "question": "Why is high-quality data important for virtual try-on?",
+    "gold_answer": "It improves realism, accuracy, user experience, trust, and personalized recommendations.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 6
+      }
+    ]
+  },
+  {
+    "question": "How does the proposed method reduce clothing distortion?",
+    "gold_answer": "It uses grid interval consistency loss, occlusion handling, and TPS-based warping.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 3
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 18
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 19
+      }
+    ]
+  },
+  {
+    "question": "What are the main limitations of the proposed virtual try-on system?",
+    "gold_answer": "It still struggles with severe occlusion and cannot fully handle 3D pose transformations.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 35
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 39
+      }
+    ]
+  },
+  {
+    "question": "Why is U-Net combined with warped cloth generation?",
+    "gold_answer": "U-Net generates realistic compositions while warped cloth preserves garment appearance.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 27
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 30
+      }
+    ]
+  },
+  {
+    "question": "How is the VTON dataset split?",
+    "gold_answer": "It contains training and testing sets with paired and rearranged unpaired test images.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 30
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 31
+      }
+    ]
+  },
+  {
+    "question": "How does the system improve online shopping?",
+    "gold_answer": "It lets customers preview garments virtually, improving confidence and reducing returns.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 1
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 5
+      }
+    ]
+  },
+  {
+    "question": "Why is occlusion handling important in GMM?",
+    "gold_answer": "It enables accurate clothing alignment even when body parts are partially covered by hair or arms.",
+    "gold_chunks": [
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 3
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 21
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 35
+      },
+      {
+        "source": "Revolutionizing_Fashion_Retail_Virtual_Try-on_Empowered_By_Deep_Learning.pdf",
+        "chunk_id": 39
+      }
+    ]
+  },
+  {
+    "question": "Why is FID an appropriate evaluation metric?",
+    "gold_answer": "Because lower FID indicates more realistic generated images.",
+    "gold_chunks": []
+  },
+  {
+    "question": "Who invented the Transformer architecture?",
+    "gold_answer": "The information is not available in the provided documents.",
+    "gold_chunks": []
+  },
+  {
+    "question": "What optimizer was used to train the proposed virtual try-on model?",
+    "gold_answer": "The information is not available in the provided documents.",
+    "gold_chunks": []
+  },
+  {
+    "question": "Which embedding model was used to build the vector database?",
+    "gold_answer": "The information is not available in the provided documents.",
+    "gold_chunks": []
+  },
+  {
+    "question": "What GPU was used for the experiments?",
+    "gold_answer": "The information is not available in the provided documents.",
+    "gold_chunks": []
+  },
+  {
+    "question": "What is the headquarters of OpenAI?",
+    "gold_answer": "The information is not available in the provided documents.",
+    "gold_chunks": []
+  }
+]
